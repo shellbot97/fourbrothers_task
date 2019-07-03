@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "bc4de830-8729-43b3-9af7-6712d1a2dd1c",
+		"name": "fourbrothers",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "user/FormSubmit",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "hitesh",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "dev.hitesh97@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "contact_number",
+							"value": "9653112932",
+							"type": "text"
+						},
+						{
+							"key": "img",
+							"type": "file",
+							"src": ""
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/fourbrothers_task/api/user/FormSubmit",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"fourbrothers_task",
+						"api",
+						"user",
+						"FormSubmit"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
