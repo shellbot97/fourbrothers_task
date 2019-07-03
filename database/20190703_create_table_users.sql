@@ -1,1 +1,10 @@
-create table users 
+CREATE TABLE users (
+id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(45) NOT NULL, 
+email VARCHAR(45) NOT NULL,
+contact_number VARCHAR(45) NOT NULL,
+img LONGBLOB NOT NULL, 
+email_sent INT(1) Default 0,
+created_date timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+updated_date DATETIME ON UPDATE CURRENT_TIMESTAMP
+);

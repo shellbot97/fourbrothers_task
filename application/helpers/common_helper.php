@@ -9,7 +9,7 @@
         * @return   json
         */
        
-        function echo_result_by_array($data = '')
+        function give_responce_array($data = '')
         {
             if (!empty($data)) {
                 return json_encode(array("status" => "Success", "responce_code" => 200, "data" => $data), 200);

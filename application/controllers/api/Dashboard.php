@@ -24,7 +24,7 @@
 		public function get_ImageData()
 		{
 			$response_users_get_ImageData = $this->dashboard_m->users_get_ImageData();
-			api_output_array($response_users_get_ImageData);
+			echo give_responce_array($response_users_get_ImageData);
 		}
 	}
 
