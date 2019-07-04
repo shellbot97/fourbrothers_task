@@ -54,3 +54,7 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 $route['user/submit'] = "api/user_form/post_ImageData";
+
+$route['dashboard/get_data'] = "api/dashboard/get_ImageData";
+
+$route['dashboard'] = "dashboard/index";
