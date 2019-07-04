@@ -49,8 +49,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'api/form/post_ImageData';
+$route['default_controller'] = 'api/user_form/post_ImageData';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-$route['api/user/FormSubmit'] = 'api/form/post_ImageData';
+/* APIS */
+
+$route['user/FormSubmit'] = 'api/form/post_ImageData';
+
+
+/* FRONT-END */

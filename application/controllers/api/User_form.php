@@ -4,11 +4,12 @@
 	* This class Deals with the APIs of user form where user is able to add 
 	* the images along with their details.
 	*/
-	class Form extends CI_Controller
+	class User_form extends CI_Controller
 	{
 		
 		public function __construct()
 		{
+			print_r("var");die;
 			parent::__construct();
 			$this->load->model('Form_model', 'form_m');
 		}
