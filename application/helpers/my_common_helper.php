@@ -31,7 +31,8 @@
             if ($value) {
                 return json_encode(array("status" => "Success", "responce_code" => 200, "data" => "Successful"), 200);
             }else{
-                return json_encode(array("status" => "Failed", "responce_code" => 500, "data" => "Failed"), 200);
+                http_response_code(422);
+                return json_encode(array("status" => "Failed", "responce_code" => 422, "data" => "Failed"), 200);
             }
         }
 
@@ -45,6 +46,7 @@
        
         function echo_validation_errors($value='')
         {
+            http_response_code(422);
             return json_encode(array("status" => "Unprocessable Entity", "responce_code" => 422, "data" => array('Errors' => $value)), 200);
         }
 
