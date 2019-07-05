@@ -103,7 +103,7 @@
 
 			$SourceFile = rand(0, 9999).'.'.explode(".", $_FILES['img']['name'])[1];
 			copy( $_FILES['img']['tmp_name'], $SourceFile);
-			$WaterMark = '/var/www/html/task/images/asset_images/images.jpeg';
+			$WaterMark = '/var/www/html/task/images/asset_images/watermark_down.jpeg';
 			$opacity = 50;
 			$DestinationFile = '/var/www/html/task/images/user_images/'.explode(".", $_FILES['img']['name'])[0].'-edited.jpg';
 
